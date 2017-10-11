@@ -1,0 +1,14 @@
+{
+  "presets": [
+      [ "es2015", {"modules": false} ],
+      // "es2015",
+      "stage-2",
+      "react"
+  ],
+  "plugins": [
+      "react-hot-loader/babel",
+      ["module-resolver", {
+          "root": ["./src", "./test"]
+      }]
+  ]
+}
