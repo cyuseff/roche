@@ -50,7 +50,7 @@ const QUESTIONS = [
     id: 106,
     title: `Los trabajos de turno nocturnos no influyen en el riesgo de cáncer de mama.`,
     resp: `La Agencia Internacional de Investigación sobre el Cáncer concluyó recientemente que <strong>las mujeres que trabajaban turnos nocturnos por 30 años o más tenían el doble de probabilidades de desarrollar cáncer de mama</strong>. Sin embargo, las mujeres que trabajan por la noche se les aconseja no entrar en pánico. Vale la pena señalar que no se encontró ningún vínculo entre el mayor riesgo de cáncer de mama y los períodos de trabajo nocturno que fueron menores de 30 años.`,
-    value: true,
+    value: false,
     avaliableAt: new Date(2017, 9, 11)
   }),
   new Question({
