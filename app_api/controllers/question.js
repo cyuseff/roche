@@ -29,7 +29,7 @@ const QUESTIONS = [
     id: 103,
     title: `El primer registro de una mastectomía ofrecida para el cáncer de mama fue hace más de 1.500 años.`,
     resp: `<strong>El primer registro de una mastectomía fue en el año 548 DC a Theodora</strong>, emperatriz de Bizantino. El progreso significativo en nuestra comprensión y tratamiento del cáncer de mama en las décadas recientes ha visto una reducción dramática en el uso de la mastectomía "radical" (donde la mama, músculo del pecho y ganglios linfáticos subyacentes se extirpan), que era el acercamiento quirúrgico estándar para el cáncer de mama hasta los años sesenta.`,
-    value: false,
+    value: true,
     avaliableAt: new Date(2017, 9, 11)
   }),
   new Question({
@@ -48,7 +48,7 @@ const QUESTIONS = [
   }),
   new Question({
     id: 106,
-    title: `Los trabajos de turno nocturnos, no influyen en el riesgo de cáncer de mama.`,
+    title: `Los trabajos de turno nocturnos no influyen en el riesgo de cáncer de mama.`,
     resp: `La Agencia Internacional de Investigación sobre el Cáncer concluyó recientemente que <strong>las mujeres que trabajaban turnos nocturnos por 30 años o más tenían el doble de probabilidades de desarrollar cáncer de mama</strong>. Sin embargo, las mujeres que trabajan por la noche se les aconseja no entrar en pánico. Vale la pena señalar que no se encontró ningún vínculo entre el mayor riesgo de cáncer de mama y los períodos de trabajo nocturno que fueron menores de 30 años.`,
     value: false,
     avaliableAt: new Date(2017, 9, 11)
@@ -57,7 +57,7 @@ const QUESTIONS = [
     id: 107,
     title: `La mayoría de las mujeres sobreviven al cáncer de mama <small><em>(al menos en los países desarrollados)</em></small>.`,
     resp: `En los últimos años se han logrado enormes progresos en el cáncer de mama. De hecho, el manejo del cáncer de mama a través de la evaluación del riesgo, la prevención, la cirugía, la radiación y otros tratamientos, han cambiado dramáticamente. <strong>Las tasas de mortalidad por cáncer de mama en los países más desarrollados han estado disminuyendo en los últimos años, y ahora las tasas de supervivencia son del 80% o más</strong> en países como Estados Unidos, Suecia y Japón. Sin embargo, las tasas de supervivencia se mantienen por debajo del 40% en los países de bajos ingresos.`,
-    value: false,
+    value: true,
     avaliableAt: new Date(2017, 9, 13)
   }),
 ];
