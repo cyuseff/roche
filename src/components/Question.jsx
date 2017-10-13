@@ -31,7 +31,7 @@ const Question = props => {
             onClick={() => onAnswer(false)}
             disabled={disabled}
           >
-            False
+            Falso
           </button>
         </div>
         <div className={`answer-text ani-all ${hidden}`} dangerouslySetInnerHTML={{__html: question.resp}} />
