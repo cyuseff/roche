@@ -3,8 +3,10 @@ import Cookie from 'js-cookie';
 
 axios.defaults.headers.common['Content-Type'] = 'application/json';
 
-//const BASE = "http://localhost:3000"
-const BASE = ""
+console.log(window.location.href)
+const BASE = /localhost/.test(window.location.href)
+  ? "http://localhost:3000"
+  : "";
 
 const getConf = token => {
   if (!token) {

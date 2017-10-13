@@ -4,7 +4,7 @@ const User = require('../models/user');
 const { QUESTIONS } = require('./question');
 
 const POINTS = 100;
-const BONUS = 10;
+const BONUS = 20;
 
 // checks if 2 dates are on the same day
 const addBonus = (a, b) => {

@@ -24,7 +24,7 @@ const NextView = props => {
         <div className="green-bar" />
         <div className="centered-cont">
           <h1>Haz completado nuestra trivia!</h1>
-          <div>Revisa el ranking y descubre a los ganadores</div>
+          <p>Revisa el ranking y descubre a los ganadores.</p>
         </div>
         <div className="green-bar" />
       </div>

@@ -81,8 +81,8 @@ body {
     color: #ffffff;
   
     .question-img {
+      background-color: #999;
       height: 525px;
-      background-image: url("/imgs/001.jpg");
       background-size: cover;
       background-position: center center;
     }
@@ -90,8 +90,6 @@ body {
     .question-text {
       display: inline-block;
       position: absolute;
-      top: 150px;
-      left: $sp-lg;
   
       font: $serif;
       text-align: center;
@@ -133,7 +131,6 @@ body {
       }
     }
   }
-  
 
   .question-body {
     padding: $sp-xlg;
@@ -162,3 +159,27 @@ body {
   }
 
 }
+
+.question.q-100 .question-header .question-img { background-image: url("/imgs/001.jpg"); }
+.question.q-100 .question-header .question-text { top: 150px; left: $sp-lg; }
+
+.question.q-101 .question-header .question-img { background-image: url("/imgs/002.jpg"); }
+.question.q-101 .question-header .question-text { top: 110px; right: $sp-lg; color: $gray; }
+
+.question.q-102 .question-header .question-img { background-image: url("/imgs/003.jpg"); }
+.question.q-102 .question-header .question-text { top: 130px; right: $sp-lg; color: $gray; }
+
+.question.q-103 .question-header .question-img { background-image: url("/imgs/004.jpg"); }
+.question.q-103 .question-header .question-text { top: 150px; right: $sp-lg; }
+
+.question.q-104 .question-header .question-img { background-image: url("/imgs/005.jpg"); }
+.question.q-104 .question-header .question-text { top: 135px; left: $sp-lg; }
+
+.question.q-105 .question-header .question-img { background-image: url("/imgs/006.jpg"); }
+.question.q-105 .question-header .question-text { top: 150px; right: $sp-lg; color: $gray; }
+
+.question.q-106 .question-header .question-img { background-image: url("/imgs/007.jpg"); }
+.question.q-106 .question-header .question-text { top: 150px; left: $sp-lg; }
+
+.question.q-107 .question-header .question-img { background-image: url("/imgs/008.jpg"); }
+.question.q-107 .question-header .question-text { top: 80px; left: $sp-lg; color: $gray; }
