@@ -1,0 +1,60 @@
+.menu {
+  position: absolute;
+  bottom: 15px;
+  right: 40px;
+
+  margin: 0;
+  padding: 0;
+
+  > li {
+    display: inline-block;
+    margin-left: 5px;
+    vertical-align: bottom;
+  }
+
+  .menu-btn {
+    display: inline-block;
+    padding: 3px 20px;
+    cursor: pointer;
+
+    font: $serif;
+    font-size: 17px;
+    font-weight: 600;
+    color: $secondary;
+
+    border: solid 2px $secondary;
+    border-radius: 3px;
+
+    &.active {
+      background-color: $secondary!important;
+      color: #FFFFFF!important;
+      border-color: $secondary!important;
+    }
+    &:hover {
+      color: $secondary-dark;
+      border-color: $secondary-dark;
+    }
+  }
+
+  .menu-user {
+    text-align: right;
+    margin-right: 10px;
+
+    .menu-email {
+      font: $serif;
+      font-size: 20px;
+      line-height: 20px;
+      font-weight: 600;
+    }
+    .menu-logout {
+      font-size: 12px;
+      line-height: 12px;
+      color: $secondary;
+      cursor: pointer;
+
+      &:hover {
+        color: $secondary-dark;
+      }
+    }
+  }
+}

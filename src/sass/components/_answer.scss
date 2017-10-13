@@ -1,0 +1,79 @@
+.answer {
+  position: relative;
+  text-align: center;
+  .points {
+    display: inline-block;
+    position: relative;
+    border: solid 10px $secondary;
+    color: $primary;
+    width: 160px;
+    height: 160px;
+    border-radius: 80px;
+    text-align: center;
+
+    .number {
+      font: $serif;
+      font-size: 90px;
+      line-height: 60px;
+      padding-top: 33px;
+      margin-left: -10px;
+    }
+
+    .text {
+      font-size: 16px;
+      margin-top: -3px;
+      display: block;
+    }
+  }
+
+  .resume {
+    .response {
+      text-transform: uppercase;
+      font-size: 15px;
+      color: $secondary;
+    }
+    .user-email {
+      font-weight: 600;
+    }
+    .user-points {
+      margin-top: -5px;
+      font-size: 14px;
+      font-weight: 600;
+      color: $secondary;
+    }
+  }
+
+  &.error {
+    .points {
+      border-color: $red;
+      color: $red;
+    }
+    .resume {
+      .response { color: $red; }
+    }
+  }
+
+  .bono {
+    display: inline-block;
+    position: absolute;
+    top: -20px;
+    right: -10px;
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+    background-color: $blue;
+    color: #fff;
+    box-shadow: 2px 2px 2px rgba(0,0,0,.4);
+
+    .bono-p {
+      font: $serif;
+      font-size: 31px;
+      line-height: 20px;
+      margin-top: 11px;
+    }
+    .bono-t {
+      font-size: 12px;
+      line-height: 11px;
+    }
+  }
+}

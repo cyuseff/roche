@@ -1,0 +1,23 @@
+.green-bar {
+  background: $primary;
+  height: 50px;
+}
+
+.centered-cont {
+  width: 700px;
+  max-width: 90%;
+  margin: 0 auto;
+  padding: $sp-xlg 0;
+
+  h1 {
+    text-align: center;
+    font-size: 50px;
+    color: $secondary;
+    text-transform: uppercase;
+    margin-bottom: $sp-lg;
+  }
+
+  > p {
+    text-align: center;
+  }
+}

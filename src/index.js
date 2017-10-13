@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { AppContainer } from 'react-hot-loader';
 
-import App from './components/App';
+import Layout from './components/Layout';
 
 const render = Component => {
     ReactDOM.render(
@@ -13,9 +13,9 @@ const render = Component => {
     );
 };
 
-render(App);
+render(Layout);
 
 // Hot Module Replacement API
 if (module.hot) {
-    module.hot.accept('./components/App', () => render(App));
+    module.hot.accept('./components/Layout', () => render(Layout));
 }

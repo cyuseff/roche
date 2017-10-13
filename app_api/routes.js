@@ -27,4 +27,17 @@ router.route('/answer/:answerId')
   .all(authCtrl.authToken)
   .patch(aCtrl.updateAnswer);
 
-module.exports = app => app.use('/api/v1/', router);  
+module.exports = app => {
+  if (process.env.NODE_ENV !== 'production') {
+    app.use(function(req, res, next) {
+      res.setHeader('Access-Control-Allow-Origin', '*');
+      res.setHeader('Access-Control-Allow-Methods', 'GET, POST, PUT, PATCH, DELETE, OPTIONS');
+      res.setHeader('Access-Control-Allow-Headers', 'content-type, Authorization');
+      next();
+    });
+  }
+
+  app.options('*', (req, res) => res.status(200).end());
+
+  app.use('/api/v1/', router);
+};

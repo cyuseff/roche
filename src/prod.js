@@ -1,11 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-import App from './components/App';
+import Layout from './components/Layout';
 
 (w => {
   ReactDOM.render(
-    React.createElement(App, {}),
+    React.createElement(Layout, {}),
     document.getElementById('root')
   );
 })(window);

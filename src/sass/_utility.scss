@@ -1,3 +1,27 @@
 .padding-all {
     padding: $sp;
 }
+
+.margin-t { margin-top: $sp; }
+.margin-b { margin-bottom: $sp; }
+
+.right {
+    float: right;
+}
+
+.left {
+    float: left;
+}
+
+.small {
+    font-size: 14px;
+}
+
+.is-hidden {
+    opacity: 0!important;
+}
+
+.ani-all {
+    -webkit-transition: all .3s ease-out .1s; /* Safari */
+    transition: all .3s ease-out .1s;
+}

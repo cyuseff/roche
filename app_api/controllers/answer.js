@@ -106,7 +106,7 @@ const updateAnswer = (req, res) => {
             if (err) {
               return sendJSON(res, 500, {err: `error updating user - ${err.toString()}`})
             }
-            sendJSON(res, 200, {answer, bonus, user: u.publicUser()})
+            sendJSON(res, 200, {answer, bonus, user: u.publicUser(), question: question.getAnswer()})
           }
         );
     })
