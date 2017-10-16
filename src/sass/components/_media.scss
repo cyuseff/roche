@@ -5,15 +5,15 @@
   
       .logo {
         top: 10px;
-        left: 10px;
-        width: 80px;
-        height: 90px;
+        left: 5px;
+        width: 70px;
+        height: 80px;
       }
       .roche {
-        top: 20px;
-        right: 10px;
-        width: 80px;
-        height: 42px;
+        top: 25px;
+        right: 5px;
+        width: 60px;
+        height: 32px;
       }
   
       .menu {
@@ -22,11 +22,12 @@
   
         .menu-btn {
           font-size: 12px;
+          padding: 3px 10px;
         }
 
         .menu-user {
           display: block;
-          padding: 5px 0;
+          padding: 10px 0 0 0;
           text-align: center;
 
           .menu-email {
@@ -87,12 +88,14 @@
         .btn {
           font-size: 21px;
           float: none!important;
-          margin-bottom: 10px;
+          display: block;
+          margin: 0 auto 10px;
         }
       }
 
       .answer-text {
         padding-top: 10px;
+        font-size: 16px;
       }
     }
   }
@@ -102,6 +105,7 @@
 
     .call {
       font-size: 26px;
+      padding: 0 10px;
     }
   }
 
@@ -114,8 +118,18 @@
       height: 130px;
     }
 
+    h1 {
+      margin-bottom: 0;
+    }
+
     .table {
       font-size: 14px;
+
+      tr {
+        th:last-child, td:last-child {
+          display: none;
+        }
+      }
     }
   }
 
