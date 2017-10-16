@@ -61,6 +61,9 @@ class Ranking extends Component {
       <div>
         <div className="green-bar" />
         <div className="ranking centered-cont">
+          <div className="text-center">
+            <div className="ranking-logo" />
+          </div>
           <h1 className="title">Ranking</h1>
           {render}
         </div>

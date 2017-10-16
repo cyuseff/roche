@@ -2,5 +2,13 @@
   width: 700px;
   max-width: 90%;
   margin: 0 auto;
-  padding: $sp-xlg 0;
+  padding: 30px 0 $sp-xlg 0;
+
+  .ranking-logo {
+    display: inline-block;
+    width: 400px;
+    height: 340px;
+    background-image: url("/imgs/ranking.jpg");
+    background-size: cover;
+  }
 }

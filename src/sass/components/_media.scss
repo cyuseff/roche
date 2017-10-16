@@ -1,0 +1,125 @@
+@media screen and (max-width: 768px) {
+  .container {
+    .header {
+      height: 80px;
+  
+      .logo {
+        top: 10px;
+        left: 10px;
+        width: 80px;
+        height: 90px;
+      }
+      .roche {
+        top: 20px;
+        right: 10px;
+        width: 80px;
+        height: 42px;
+      }
+  
+      .menu {
+        position: static;
+        text-align: center;
+  
+        .menu-btn {
+          font-size: 12px;
+        }
+
+        .menu-user {
+          display: block;
+          padding: 5px 0;
+          text-align: center;
+
+          .menu-email {
+            font-size: 14px;
+          }
+        }
+      }
+    }
+  }
+
+  .question {
+    .question-header {
+
+      .question-img {
+        height: 180px;
+      }
+
+      .question-text {
+        display: block;
+        position: static;
+        color: $gray;
+        width: 100%;
+
+        .ques {
+          display: block;
+          position: static;
+          font-size: 21px;
+          margin: 10px 0;
+          padding: 0 20px;
+        }
+      }
+
+      .bars {
+        position: static;
+        width: 100%;
+        margin-top: 10px;
+
+        .bar {
+          display: block;
+          position: static;
+          height: 16px;
+          margin: 0;
+          border-radius: 0;
+          width: 100%!important;
+        }
+      }
+    }
+
+    .question-body {
+      padding: 20px;
+
+      .answer-action {
+        height: auto;
+        text-align: center;
+        padding: 0;
+        margin: 0;
+
+        .btn {
+          font-size: 21px;
+          float: none!important;
+          margin-bottom: 10px;
+        }
+      }
+
+      .answer-text {
+        padding-top: 10px;
+      }
+    }
+  }
+
+  .footer {
+    padding: 30px 0 10px 0;
+
+    .call {
+      font-size: 26px;
+    }
+  }
+
+  .ranking {
+    padding: 5px 0;
+  
+    .ranking-logo {
+      display: inline-block;
+      width: 150px;
+      height: 130px;
+    }
+
+    .table {
+      font-size: 14px;
+    }
+  }
+
+  .green-bar {
+    height: 30px;
+  }
+}
