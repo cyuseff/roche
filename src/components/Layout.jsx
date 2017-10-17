@@ -64,7 +64,7 @@ class Layout extends Component {
     }
 
     return (
-      <div className="container">
+      <div className="container-fluid">
         <div className="container-inner">
           <Header
             user={user}
