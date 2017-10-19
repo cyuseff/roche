@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Roche</title>
+  </head>
+  <body>
+    <div id="trivia"></div>
+    <script>
+      var iframe = document.createElement('iframe');
+      iframe.width = "100%";
+      iframe.height = 700;
+      iframe.frameBorder = 0;
+      iframe.src = 'https://secret-wave-28110.herokuapp.com/';
+
+      document.getElementById('trivia').append(iframe);
+
+      window.addEventListener('message', function(e) {
+        var message = e.data;
+        iframe.height = message;
+      });
+    </script>
+  </body>
+</html>

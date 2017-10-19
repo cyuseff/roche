@@ -17,5 +17,24 @@
     <script src="js/bootstrap.min.js"></script>
     <script src="bundle.js?nocache=<%- Date.now() %>"></script>
 
+    <script>
+      if(window.postMessage) {
+        var root = document.getElementById('root');
+        var last = 0;
+        function callParent() {
+          var h = root.scrollHeight;
+          if (h !== last) {
+            last = h;
+            window.parent.postMessage(h, '*');
+          }
+        }
+        callParent();
+
+        window.setInterval(function(){
+          callParent();
+        }, 200); 
+      }
+    </script>
+
   </body>
 </html>

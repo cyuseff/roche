@@ -18,6 +18,8 @@ app.use(bodyParser.json());
 
 // Routes
 require('./app_api/routes')(app);
+app.get('/iframe', (req, res) => res.render('./iframe'));
 app.get('*', (req, res) => res.render('./index'));
+
 
 module.exports = app;
