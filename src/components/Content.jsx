@@ -42,7 +42,7 @@ class Content extends Component {
       getNextQuestion(token)
         .then(data => {
           const { question, next, meta, next_date } = data;
-          if (meta === 'user has answer all questions') {
+          if (meta === 'user has answer all questions' || meta === 'no questions avaliable') {
             this.setState({
               complete: true,
               loading: false,
