@@ -50,8 +50,12 @@ const authToken = (req, res, next) => {
     .catch(err => sendJSON(res, 401, {err: err.toString()}));
 };
 
+const sanitize = str => str.trim().toLowerCase();
+
 const createUser = (req, res) => {
   const {name, email} = req.body;
+  name = sanitize(name);
+  email = sanitize(email);
   const user = new User({name, email});
 
   return user
@@ -66,8 +70,9 @@ const createUser = (req, res) => {
 
 const login = (req, res) => {
   const { email } = req.body;
+  email = sanitize(email);
   User
-    .findOne({email})
+    .findOne({email: new RegExp(email, 'i')})
     .exec((err, user) => {
       if (err) {
         return sendJSON(res, 500, {err: err.toString()});
