@@ -60,6 +60,44 @@ const QUESTIONS = [
     value: true,
     avaliableAt: new Date(2017, 10, 6)
   }),
+  new Question({
+    id: 108,
+    title: `El cáncer de mama HER2 positivo afecta aproximadamente al 25% de las mujeres con cáncer de mama`,
+    resp: `El receptor HER2+ significa que el oncogen se encuentra amplificado o sobre expresado en la superficie de las células cancerígenas. Esto se traduce en una <strong>proliferación o multiplicación descontrolada de las células malignas</strong>.`,
+    value: true,
+    avaliableAt: new Date(2017, 10, 9)
+  }),
+
+  new Question({
+    id: 109,
+    title: `El cáncer de mama HER2+ temprano no tiene opción de cura`,
+    resp: `El cáncer de mama HER2+ en etapa temprana tratadas con Herceptin, <strong>7 de cada 10 mujeres están vivas y libre de enfermedad</strong> a los 11 años (Estudio HERA).`,
+    value: false,
+    avaliableAt: new Date(2017, 10, 9)
+  }),
+
+  new Question({
+    id: 110,
+    title: `Una de las actrices de la famosa serie "Sex and the City" tuvo cáncer de mama`,
+    resp: `La famosa actriz Miranda Hobbes de Sex and the City <strong>fue diagnosticada con cáncer de mama el año 2006</strong>, gracias a una mamografía que se realizó y salió alterada. Actualmente es una famosa activista que lucha contra el cáncer de mama y su prevención.`,
+    value: true,
+    avaliableAt: new Date(2017, 10, 14)
+  }),
+
+  // new Question({
+  //   id: 108,
+  //   title: `Una de las actrices de la famosa serie "Sex and the City" tuvo cáncer de mama`,
+  //   resp: `La famosa actriz Miranda Hobbes de Sex and the City <strong>fue diagnosticada con cáncer de mama el año 2006</strong>, gracias a una mamografía que se realizó y salió alterada. Actualmente es una famosa activista que lucha contra el cáncer de mama y su prevención.`,
+  //   value: true,
+  //   avaliableAt: new Date(2017, 10, 9)
+  // }),
+  // new Question({
+  //   id: 109,
+  //   title: `El cáncer de mama es la segunda causa de muerte por cáncer en mujeres chilenas`,
+  //   resp: `Actualmente <strong>el cáncer de mama ocupa el primer lugar dentro de las causas de muertes</strong> por cáncer en mujeres chilenas (Departamento de Estadística - MINSAL 2012).`,
+  //   value: false,
+  //   avaliableAt: new Date(2017, 10, 9)
+  // }),
 ];
 
 const avaliableQuestions = (questions, now) =>
