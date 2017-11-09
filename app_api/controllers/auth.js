@@ -53,7 +53,7 @@ const authToken = (req, res, next) => {
 const sanitize = str => str.trim().toLowerCase();
 
 const createUser = (req, res) => {
-  const {name, email} = req.body;
+  let {name, email} = req.body;
   name = sanitize(name);
   email = sanitize(email);
   const user = new User({name, email});
@@ -69,7 +69,7 @@ const createUser = (req, res) => {
 };
 
 const login = (req, res) => {
-  const { email } = req.body;
+  let { email } = req.body;
   email = sanitize(email);
   console.log("email", email);
   const reg = new RegExp(email);
