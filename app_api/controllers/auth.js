@@ -77,7 +77,7 @@ const login = (req, res) => {
   let { email } = req.body;
   email = sanitize(email);
   console.log("email", email);
-  const reg = new RegExp(email, "i");
+  const reg = new RegExp(`^${email}$`, "i");
   console.log(reg);
   User
     .findOne({email: reg})
