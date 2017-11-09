@@ -71,8 +71,11 @@ const createUser = (req, res) => {
 const login = (req, res) => {
   const { email } = req.body;
   email = sanitize(email);
+  console.log("email", email);
+  const reg = new RegExp(email);
+  console.log(reg);
   User
-    .findOne({email: { $regex: new RegExp(email), $options: 'i' }})
+    .findOne({email: reg})
     .exec((err, user) => {
       if (err) {
         return sendJSON(res, 500, {err: err.toString()});
