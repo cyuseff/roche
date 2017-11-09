@@ -50,7 +50,12 @@ const authToken = (req, res, next) => {
     .catch(err => sendJSON(res, 401, {err: err.toString()}));
 };
 
-const sanitize = str => str.trim().toLowerCase();
+const sanitize = str => {
+  if (!str) {
+    return str;
+  }
+  return str.trim().toLowerCase();
+}
 
 const createUser = (req, res) => {
   let {name, email} = req.body;
