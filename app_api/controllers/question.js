@@ -78,26 +78,36 @@ const QUESTIONS = [
 
   new Question({
     id: 110,
-    title: `Una de las actrices de la famosa serie "Sex and the City" tuvo cáncer de mama`,
-    resp: `La famosa actriz Miranda Hobbes de Sex and the City <strong>fue diagnosticada con cáncer de mama el año 2006</strong>, gracias a una mamografía que se realizó y salió alterada. Actualmente es una famosa activista que lucha contra el cáncer de mama y su prevención.`,
+    title: `La mamografía es el examen de elección para detectar el cáncer de mama`,
+    resp: `La mamografía permiteobservar la estructura de la mama, permitiendo detectar lesiones mamarias. <strong>La mamografía permite un diagnóstico de cáncer de mama oportuno y temprano,</strong> permitiendo mayores opciones de curación.`,
     value: true,
     avaliableAt: new Date(2017, 10, 14)
   }),
 
-  // new Question({
-  //   id: 108,
-  //   title: `Una de las actrices de la famosa serie "Sex and the City" tuvo cáncer de mama`,
-  //   resp: `La famosa actriz Miranda Hobbes de Sex and the City <strong>fue diagnosticada con cáncer de mama el año 2006</strong>, gracias a una mamografía que se realizó y salió alterada. Actualmente es una famosa activista que lucha contra el cáncer de mama y su prevención.`,
-  //   value: true,
-  //   avaliableAt: new Date(2017, 10, 9)
-  // }),
-  // new Question({
-  //   id: 109,
-  //   title: `El cáncer de mama es la segunda causa de muerte por cáncer en mujeres chilenas`,
-  //   resp: `Actualmente <strong>el cáncer de mama ocupa el primer lugar dentro de las causas de muertes</strong> por cáncer en mujeres chilenas (Departamento de Estadística - MINSAL 2012).`,
-  //   value: false,
-  //   avaliableAt: new Date(2017, 10, 9)
-  // }),
+  new Question({
+    id: 111,
+    title: `El autoexamen mamario se debe realiar una vez por semana`,
+    resp: `El autoexamen de mama se <strong>recomienda realizarlo mensualmente, idealmente 3 a 4 días post menstruación.</strong> De todas formas esto no sustituye la mamografía ni el examen clínico por un profesional de la salud.`,
+    value: false,
+    avaliableAt: new Date(2017, 10, 14)
+  }),
+
+  new Question({
+    id: 112,
+    title: `Una de las actrices de la famosa serie "Sex and the City" tuvo cáncer de mama`,
+    resp: `La famosa actriz Miranda Hobbes de Sex and the City <strong>fue diagnosticada con cáncer de mama el año 2006</strong>, gracias a una mamografía que se realizó y salió alterada. Actualmente es una famosa activista que lucha contra el cáncer de mama y su prevención.`,
+    value: true,
+    avaliableAt: new Date(2017, 10, 16)
+  }),
+
+  new Question({
+    id: 113,
+    title: `El cáncer de mama es la segunda causa de muerte por cáncer en mujeres chilenas`,
+    resp: `Actualmente el <strong>cáncer de mama ocupa el primer lugar dentro de las causas de muertes</strong> por cáncer en mujeres chilenas (Departamento de Estadistica, MINSAL 2012).`,
+    value: false,
+    avaliableAt: new Date(2017, 10, 16)
+  })
+
 ];
 
 const avaliableQuestions = (questions, now) =>
